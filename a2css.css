@@ -1,0 +1,60 @@
+/*XUAN HUY PHAM - 000899551 - Assignment 2*/
+/*CSS file: a2css.css*/
+/*date: 2/25/2024*/
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#introheader {
+  text-align: center;
+}
+
+.question-title {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+textarea {
+  margin-top: 20px;
+  padding-right: 8px;
+  min-height: 60px;
+  width: 300px;
+}
+
+.accordion-item {
+  border: none;
+}
+
+.accordion-body {
+  background-color:rgb(195, 202, 209);
+  padding: 40px 0 40px 0;
+  border-radius: 30px;
+  margin: 10px;
+}
+
+ .accordion-button {
+  background-color: rgb(110, 136, 163);
+  border: 2px black solid;
+}
+
+ .accordion-button:hover {
+  background-color: rgb(54, 67, 82);
+  color: rgb(255, 255, 255);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color:rgb(45, 54, 65);
+    color: rgb(255, 255, 255);
+    
+}
+
+footer {
+  text-align: center;
+  padding-top: 25%;
+  position: relative;
+  width: 100%;
+}

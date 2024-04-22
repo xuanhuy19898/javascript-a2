@@ -1,0 +1,157 @@
+<!--XUAN HUY PHAM - 000899551-  Assignment 2-->
+<!--HTML file: index.html-->
+<!--date: 2/25/2024-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Assignment 2 - Huy Pham</title>
+    <link href="a2css.css" rel="stylesheet">
+    <script src="a2javascript.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="display-2 ">ASSIGNMENT 2</h1>
+        <div id="introheader">
+            <p>Xuan Huy Pham / 000899551</p>
+            <p>There are 3 groups of questions: Q1 and Q2 are from group 1, Q3 and Q4 are from group 2 and Q5 is from group 3</p>
+            </p>
+        </div>
+    </header><hr>
+    <p class="text-center text-bg-light p-3 sticky-top">Instruction: Select what you would like to use and insert valid input :) </p>
+    <div class="container">
+        <div class="accordion" id="accordionExample">
+            <!--Q1 - group 1 - choice 1-->
+            <div class="text-center">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button p-4 mb-1 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
+                  Q1/Group 1 - Choice 1/ Check if number is in range</button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                        <div id="g1-1" class="p-container">
+                            <p class="question-title">Check if input number is in range</p>
+                            <label for="q1_input">Input:</label>
+                            <input type="text" id="q1_input" onchange="group1_choice1()"><br>
+                        <label for="q1_output">Output:</label>
+                        <textarea id="q1_output" readonly></textarea>
+                        <hr>
+                        <p class="text-danger">INSTRUCTION:</p>
+                        <p>Please enter a numerical value. If the value falls within the range of 13 to 17, inclusive, the output should be "In range." If the input is 0 or outside this range, the output should be "Out of range." If the input is not a number, the output should be "Not a number."</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!--Q2 - group 1 - choice 2-->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed p-4 mb-1 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Q2/Group 1 - Choice 2/ Convert days to years</button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <div class="text-center">
+                          <div id="g1-2" class="p-container">
+                              <p class="question-title">Convert days to years</p>
+                              <label for="q2_input">Input:</label>
+                          <input type="text" id="q2_input" onchange="group1_choice2()"><br>
+                    
+                          <label for="q2_output">Output:</label>
+                          <textarea id="q2_output" readonly></textarea>
+                          <hr>
+                        <p class="text-danger">INSTRUCTION</p>
+                        <p>
+                          Enter a positive numerical value representing the number of days. This value will be converted into years, months, and days. If the input is incorrect or negative, the output will be "Non-numeric or negative input."</p>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <!--Q3 - group 2 - choice 1-->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed p-4 mb-1 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Q3/Group 2 - Choice 1/ Check If input is Vowel</button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="text-center">
+                        <div id="g2-1" class="p-container">
+                            <p class="question-title">Check vowel</p>
+                            <label for="q3_input">Input:</label>
+                        <input type="text" id="q3_input" onchange="group2_choice1()"><br>
+                  
+                        <label for="q3_output">Output:</label>
+                        <textarea id="q3_output" readonly></textarea>
+                        <hr>
+                        <p class="text-danger">INSTRUCTION</p>
+                        <p>Input a letter. If it's a/e/i/o/u, output = "A Vowel"</p>
+                        <p>If input is "y", output = "Well, sometimes"</p>
+                        <p>Otherwise, output = "Not a vowel"</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!--Q4 - group 2 - choice 3-->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed p-4 mb-1 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Q4/Group 2 - Choice 3/ Factorial Calculator</button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="text-center">
+                        <div id="g2-3" class="p-container">
+                            <p class="question-title">Factorial Calculator</p>
+                            <label for="q4_input">Input:</label>
+                        <input type="text" id="q4_input" onchange="group2_choice3()"><br>
+                  
+                        <label for="q4_output">Output:</label>
+                        <textarea id="q4_output" readonly></textarea>
+                        <hr>
+                        <p class="text-danger">INSTRUCTION</p>
+                        <p>Enter a positive integer. The output will be the factorial of the input value. If the input is not a positive integer, please try again with a new input</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!--Q5 - group 3 - choice 1-->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed p-4 mb-1 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Q5/Group 3 - Choice 1/ Binary to Decimal Converter</button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <div class="text-center">
+                          <div id="g3-1" class="p-container">
+                              <p class="question-title">Binary to Decimal Converter</p>
+                              <label for="q5_input">Input:</label>
+                          <input type="text" id="q5_input" onchange="group3_choice1()"><br>
+                    
+                          <label for="q5_output">Output:</label>
+                          <textarea id="q5_output" readonly></textarea>
+                          <hr>
+                        <p class="text-danger">INSTRUCTION</p>
+                        <p>Please input a string containing 10 to 20 characters, inclusive, consisting solely of 0's and 1's. If the input meets these criteria, the output will be the equivalent integer value. Otherwise, the output will be "0."</p>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <footer>
+            <hr>
+            <p>2024, XUAN HUY PHAM, MOHAWK COLLEGE</p>
+          </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
